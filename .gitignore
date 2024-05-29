@@ -1,3 +1,7 @@
+# SEA
+*.exe
+*.blob
+
 # Logs
 logs
 *.log

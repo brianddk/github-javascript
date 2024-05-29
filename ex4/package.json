@@ -1,0 +1,23 @@
+{
+  "description": "Ex4. Creating an executable from a node module",
+  "name": "Hello",
+  "version": "0.0.4",
+  "main": "hello.js",
+  "output": "sea-prep.blob",
+  "disableExperimentalSEAWarning": true,
+  "private": true,
+  "scripts": {
+    "clean": "del hello.exe sea-prep.blob",
+    "sea-blob": "node --experimental-sea-config package.json",
+    "cp-node": "node -e \"require('fs').copyFileSync(process.execPath, 'hello.exe')\"",
+    "axe-sig": "cd && \"C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/signtool.exe\" remove /s hello.exe",
+    "sea-inject": "npx postject hello.exe NODE_SEA_BLOB sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2",
+    "test": "hello.exe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "postject": "^1.0.0-alpha.6"
+  }
+}

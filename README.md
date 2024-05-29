@@ -30,9 +30,11 @@ Most common approach would be to [learn Javascript][g] in the NodeJS, then learn
 
 [a]: https://en.wikipedia.org/wiki/ECMAScript
 [b]: https://v8.dev/
-[c]: https://www.sitepoint.com/webpack-beginner-guide/
+[c]: https://webpack.js.org/guides/getting-started/
 [d]: https://www.typescriptlang.org/
 [e]: https://webassembly.org/
 [f]: https://nodejs.org/api/single-executable-applications.html
 [g]: https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
 [e]: https://webassembly.org/getting-started/developers-guide/
+
+[z]: https://www.sitepoint.com/webpack-beginner-guide/

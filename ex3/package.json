@@ -1,0 +1,14 @@
+{
+  "description": "Ex3. Longer example of package.json with expanded octokit usage",
+  "name": "Hello",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "hello.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0"
+}
