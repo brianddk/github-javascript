@@ -3,6 +3,7 @@ Quick lesson on Javascript using Github
 
 * Introduction to BrowserJS (Javascript): https://www.w3schools.com/js/default.asp
 * Introduction to Node.js (Javascript): https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+* Official Javascript Language Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 * Node.js Standard Library Reference: https://nodejs.org/docs/latest/api/
 
 # What is Javascript
