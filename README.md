@@ -28,7 +28,7 @@ Just as we mentioned bundlers to convert code for the NodeJS runtime into browse
 
 ## Conclusion
 
-Most common approach would be to [learn Javascript][g] in the NodeJS, then learn a bundler to transpile your NodeJS to BrowserJS.  I'd suggest you learn NodeJS v22, using the MJS module syntax, conforming to the ES14 language specification.  From there you can pickup the WebPack bundler to turn your NodeJS into BrowserJS and house in a website.  If Javascript becomes your new favorite language you can pick up a new middle language (C,C++, C#, Rust, Go) to use to [compile WebAssembly][e].
+Most common approach would be to [learn Javascript][g] in the NodeJS, then learn a bundler to transpile your NodeJS to BrowserJS.  I'd suggest you learn NodeJS v22, using the MJS (aka ESM) module syntax, conforming to the ES14 language specification.  From there you can pickup the WebPack bundler to turn your NodeJS into BrowserJS and house in a website.  Code logical analyzers like [eslint][f] are also a good thing to take on. If Javascript becomes your new favorite language you can pick up a new middle language (C,C++, C#, Rust, Go) to use to [compile WebAssembly][e].
 
 [a]: https://en.wikipedia.org/wiki/ECMAScript
 [b]: https://v8.dev/
@@ -38,5 +38,5 @@ Most common approach would be to [learn Javascript][g] in the NodeJS, then learn
 [f]: https://nodejs.org/api/single-executable-applications.html
 [g]: https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
 [e]: https://webassembly.org/getting-started/developers-guide/
-
+[f]: https://eslint.org/docs/latest/use/getting-started
 [z]: https://www.sitepoint.com/webpack-beginner-guide/
