@@ -1,11 +1,28 @@
 {
   "description": "Ex4. Creating an executable from a node module",
+  "comment-3": [
+    "Some of these fields like 'comment-x', 'disableExperimentalSEAWarning' ",
+      "and 'output' are extra and not explicitly defined in the NPM package.json ",
+      "specification.  These are used in other utilities that I choose to feed ",
+      "package.json as input to.  Perhaps a poor method for passing data, but I ",
+      "feel for some of these small examples, it just makes things a bit easier. ",
+      "spec: https://docs.npmjs.com/cli/v10/configuring-npm/package-json ",
+      "echo require('Hello') > ex4.cjs && node ex5.cjs"
+  ],
   "name": "Hello",
   "version": "0.0.4",
-  "main": "hello.js",
+  "main": "./hello.js",
+  "exports": "./hello.js",
   "output": "sea-prep.blob",
   "disableExperimentalSEAWarning": true,
-  "private": true,
+  "comment-18": [
+    "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
+      "sea-blob - packages the javascript bytecode for injection ",
+      "cp-node - copies the node binary as a template binary ",
+      "axe-sig - removes the sig from the reference binary (req signtool) ",
+      "sea-inject - injects the bytecode into the reference binary ",
+      "test - runs the resultant executable to test if it worked"
+  ],
   "scripts": {
     "clean": "del hello.exe sea-prep.blob",
     "sea-blob": "node --experimental-sea-config package.json",
@@ -15,9 +32,18 @@
     "test": "hello.exe"
   },
   "keywords": [],
-  "author": "",
+  "author": "brianddk at GitHub",
   "license": "Apache-2.0",
+  "comment-37": [
+    "'dependencies' execute on 'npm install ...'"
+  ],
   "dependencies": {
+    "octokit": "^4.0.2"
+  },
+  "comment-43": [
+    "'devDependencies' execute on 'npm install --include=dev ...'"
+  ],
+  "devDependencies": {
     "postject": "^1.0.0-alpha.6"
   }
 }

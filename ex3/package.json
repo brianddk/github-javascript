@@ -3,12 +3,18 @@
   "name": "Hello",
   "version": "0.0.3",
   "type": "module",
-  "main": "hello.js",
-  "private": true,
+  "main": "./hello.js",
+  "exports": "./hello.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo import 'Hello' > ex3.mjs && node ex3.mjs && del ex3.mjs"
   },
   "keywords": [],
-  "author": "",
-  "license": "Apache-2.0"
+  "author": "brianddk at GitHub",
+  "license": "Apache-2.0",
+  "comment-14": [
+    "'dependencies' execute on 'npm install ...'"
+  ],
+  "dependencies": {
+    "octokit": "^4.0.2"
+  }
 }

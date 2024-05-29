@@ -1,23 +1,45 @@
 {
   "description": "Ex5. Webpack example",
+  "comment-3": [
+    "Some of these fields like 'comment-x', and 'output' are extra and not ",
+      "explicitly defined in the NPM package.json specification.  These ",
+      "are used in other utilities that I choose to feed package.json as ",
+      "input to.  Perhaps a poor method for passing data, but I feel for ",
+      "some of these small examples, it just makes things a bit easier. ",
+      "spec: https://docs.npmjs.com/cli/v10/configuring-npm/package-json ",
+      "echo import 'Hello' > ex5.mjs && node ex5.mjs"
+  ],
   "name": "Hello",
   "version": "0.0.5",
   "type": "module",
   "main": "./hello.js",
   "exports": "./hello.js",
+  "output": "./dist/main.js",
   "private": true,
+  "comment-17": [
+    "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
+      "test - import and export test ",
+      "no-cors - an example of launching chrome without CORS security ",
+      "webpack - turns NodeJS into BrowserJS, see 'config' file named"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo import 'Hello' > ex5.mjs && node ex5.mjs && del ex5.mjs",
     "no-cors": "start chrome.exe --disable-web-security",
     "webpack": "npx webpack --config webpack.config.cjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "brianddk at GitHub",
   "license": "Apache-2.0",
+  "comment-33": [
+    "'devDependencies' execute on 'npm install --include=dev ...'"
+  ],
   "devDependencies": {
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },
+  "comment-40": [
+    "'dependencies' execute on 'npm install ...'"
+  ],
   "dependencies": {
     "octokit": "^4.0.2"
   }

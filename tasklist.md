@@ -19,8 +19,9 @@ From a powershell prompt
     * `cd ..` - return to top directory
 8. Run Ex5: 
     * `cd .\ex5` - switch the the Ex5 directory
-    * `npm install` - install the dependencies for webpack
+    * `npm install --include=dev` - install the dependencies for webpack
     * `npm run webpack` - webpack your hello.js fine and all dependencies
+    * Run .\ex5\dist\index.html in Chrome and watch debugger break in
 
 [a]: https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
 [b]: https://github.com/octokit/octokit.js?tab=readme-ov-file#usage
