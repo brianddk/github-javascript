@@ -4,7 +4,7 @@ The bare minimum code to import the OctoKit module from GitHub. We will actually
 
 ## Samples provided
 
-- **hello.js** - Stub file simply to show basic import syntax
+- **hello.mjs** - Stub file simply to show basic import syntax
 
 ## Walkthrough
 
