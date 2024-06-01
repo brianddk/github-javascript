@@ -1,0 +1,45 @@
+{
+  "description": "Ex7. eslint, prettier, and promises",
+  "comment-a": [
+    "spec: https://docs.npmjs.com/cli/v10/configuring-npm/package-json ",
+    "echo import 'Hello' > ex7.mjs && node ex7.mjs"
+  ],
+  "name": "Hello",
+  "version": "0.0.7",
+  "type": "module",
+  "main": "./hello.js",
+  "exports": "./hello.js",
+  "comment-b": [
+    "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
+    "  test - import and export test ",
+    "  lint - run the lint static code analysis tool",
+    "  pretty - check source for poor style",
+    "  pretty:commit - commit pretty suggestions to code"
+  ],
+  "scripts": {
+    "test": "echo import 'Hello' > ex7.mjs && node ex7.mjs && del ex7.mjs",
+    "lint": "eslint && echo Close enough (warnings don't count)! || echo Errors Found!!",
+    "pretty": "prettier --check .",
+    "pretty:commit": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "brianddk at GitHub",
+  "license": "Apache-2.0",
+  "comment-c": [
+    "see: https://web.archive.org/web/20200723064147/https://docs.npmjs.com/misc/coding-style"
+  ],
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "octokit": "^4.0.2"
+  }
+}

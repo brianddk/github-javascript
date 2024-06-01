@@ -1,0 +1,37 @@
+{
+  "description": "Ex6. eslint example",
+  "comment-a": [
+    "spec: https://docs.npmjs.com/cli/v10/configuring-npm/package-json ",
+    "echo import 'Hello' > ex6.mjs && node ex6.mjs"
+  ],
+  "name": "Hello",
+  "version": "0.0.6",
+  "type": "module",
+  "main": "./hello.js",
+  "exports": "./hello.js",
+  "comment-b": [
+    "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
+    "test - import and export test ",
+    "eslint - run the lint static code analysis tool "
+  ],
+  "scripts": {
+    "test": "echo import 'Hello' > ex6.mjs && node ex6.mjs && del ex6.mjs",
+    "eslint": "npx eslint && echo Close enough (warnings don't count)! || echo Errors Found!!"
+  },
+  "keywords": [],
+  "author": "brianddk at GitHub",
+  "license": "Apache-2.0",
+  "comment-c": [
+    "'devDependencies' execute on 'npm install --include=dev ...'"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0"
+  },
+  "comment-d": [
+    "'dependencies' execute on 'npm install ...'"
+  ],
+  "dependencies": {
+    "octokit": "^4.0.2"
+  }
+}

@@ -2,6 +2,9 @@
 *.exe
 *.blob
 
+# WASM
+*.wasm
+
 # Logs
 logs
 *.log

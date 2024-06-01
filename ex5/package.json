@@ -2,12 +2,12 @@
   "description": "Ex5. Webpack example",
   "comment-3": [
     "Some of these fields like 'comment-x', and 'output' are extra and not ",
-      "explicitly defined in the NPM package.json specification.  These ",
-      "are used in other utilities that I choose to feed package.json as ",
-      "input to.  Perhaps a poor method for passing data, but I feel for ",
-      "some of these small examples, it just makes things a bit easier. ",
-      "spec: https://docs.npmjs.com/cli/v10/configuring-npm/package-json ",
-      "echo import 'Hello' > ex5.mjs && node ex5.mjs"
+    "explicitly defined in the NPM package.json specification.  These ",
+    "are used in other utilities that I choose to feed package.json as ",
+    "input to.  Perhaps a poor method for passing data, but I feel for ",
+    "some of these small examples, it just makes things a bit easier. ",
+    "spec: https://docs.npmjs.com/cli/v10/configuring-npm/package-json ",
+    "echo import 'Hello' > ex5.mjs && node ex5.mjs"
   ],
   "name": "Hello",
   "version": "0.0.5",
@@ -18,9 +18,9 @@
   "private": true,
   "comment-17": [
     "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
-      "test - import and export test ",
-      "no-cors - an example of launching chrome without CORS security ",
-      "webpack - turns NodeJS into BrowserJS, see 'config' file named"
+    "test - import and export test ",
+    "no-cors - an example of launching chrome without CORS security ",
+    "webpack - turns NodeJS into BrowserJS, see 'config' file named"
   ],
   "scripts": {
     "test": "echo import 'Hello' > ex5.mjs && node ex5.mjs && del ex5.mjs",
