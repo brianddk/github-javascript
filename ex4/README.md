@@ -17,25 +17,30 @@ To run through these examples, after reviewing the source, perform the following
 
 This installs all the packages listed in `packages.json` including the development dependencies. This will install the modules in the parent directory simply to keep from duplicated all the downloads.
 
+    # Optional
     npm run sea-blob
 
-Optional. Make the blob that will be injected into `node.exe` to produce the SEA binary. This process is similar to other bundling methods, where all dependencies are determined and bundled into a single object to execute. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
+Make the blob that will be injected into `node.exe` to produce the SEA binary. This process is similar to other bundling methods, where all dependencies are determined and bundled into a single object to execute. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
 
+    # Optional
     npm run cp-node
 
-Optional. Copy the `node.exe` binariy to `hello.exe`. This will be a template that we will use to build our SEA binary from. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
+Copy the `node.exe` binariy to `hello.exe`. This will be a template that we will use to build our SEA binary from. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
 
+    # Optional
     npm run axe-sig
 
-Optional. Since we are about to modify our template binary (`hello.exe`), our changes will make our digital signatures invalid. To prevent loader errors, we will use powershell to remove the binary signature. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
+Since we are about to modify our template binary (`hello.exe`), our changes will make our digital signatures invalid. To prevent loader errors, we will use powershell to remove the binary signature. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
 
+    # Optional
     npm run sea-inject
 
-Optional. Now that we have the blob and the unsigned template binary, we simply inject one into the other which is what this target does. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
+Now that we have the blob and the unsigned template binary, we simply inject one into the other which is what this target does. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
 
+    # Optional
     npm run clean
 
-Optional. If we make changes and need to rebuild, this target will remove the previous builds. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
+If we make changes and need to rebuild, this target will remove the previous builds. This step is automatically done with the `npm run build` target, but is still listed here to help debug in case there are any issues.
 
     npm run build
 
