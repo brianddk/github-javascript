@@ -24,7 +24,7 @@ This installs all the packages listed in `packages.json` including the developme
 
 Run prettier on the current source. If you find any files in need of modification, perform `npm run pretty:commit`.
 
-    npm run lent
+    npm run lint
 
 Run ESLint to check for logical or syntactic errors. You'll need to modify the files in error as ESLint does not offer to make the changes.
 

@@ -1,13 +1,13 @@
 {
   "description": "Ex4. Creating an executable from a node module",
-  "comment-3": [
+  "comment-a": [
     "Some of these fields like 'comment-x', 'disableExperimentalSEAWarning' ",
     "and 'output' are extra and not explicitly defined in the NPM package.json ",
     "specification.  These are used in other utilities that I choose to feed ",
     "package.json as input to.  Perhaps a poor method for passing data, but I ",
     "feel for some of these small examples, it just makes things a bit easier. ",
     "spec: https://docs.npmjs.com/cli/v10/configuring-npm/package-json ",
-    "echo require('Hello') > ex4.cjs && node ex5.cjs"
+    "echo require('Hello') > ex4.cjs && node ex4.cjs"
   ],
   "name": "Hello",
   "version": "0.0.4",
@@ -15,32 +15,34 @@
   "exports": "./hello.js",
   "output": "sea-prep.blob",
   "disableExperimentalSEAWarning": true,
-  "comment-18": [
+  "comment-b": [
     "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
-    "sea-blob - packages the javascript bytecode for injection ",
-    "cp-node - copies the node binary as a template binary ",
-    "axe-sig - removes the sig from the reference binary (req signtool) ",
-    "sea-inject - injects the bytecode into the reference binary ",
-    "test - runs the resultant executable to test if it worked"
+    "  sea-blob - packages the javascript bytecode for injection ",
+    "  cp-node - copies the node binary as a template binary ",
+    "  axe-sig - removes the sig from the reference binary via powershell ",
+    "  sea-inject - injects the bytecode into the reference binary ",
+    "  build - perform all steps to build SEA from source ",
+    "  test - runs the resultant executable to test if it worked"
   ],
   "scripts": {
     "clean": "del hello.exe sea-prep.blob",
     "sea-blob": "node --experimental-sea-config package.json",
     "cp-node": "node -e \"require('fs').copyFileSync(process.execPath, 'hello.exe')\"",
-    "axe-sig": "cd && \"C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/signtool.exe\" remove /s hello.exe",
+    "axe-sig": "powershell ..\\script\\ImageRemoveCertificate.ps1 %cd%\\hello.exe",
     "sea-inject": "npx postject hello.exe NODE_SEA_BLOB sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2",
+    "build": "npm run clean && npm run sea-blob && npm run cp-node && npm run axe-sig && npm run sea-inject",
     "test": "hello.exe"
   },
   "keywords": [],
   "author": "brianddk at GitHub",
   "license": "Apache-2.0",
-  "comment-37": [
+  "comment-c": [
     "'dependencies' execute on 'npm install ...'"
   ],
   "dependencies": {
     "octokit": "^4.0.2"
   },
-  "comment-43": [
+  "comment-d": [
     "'devDependencies' execute on 'npm install --include=dev ...'"
   ],
   "devDependencies": {

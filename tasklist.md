@@ -35,6 +35,9 @@ From a powershell prompt
     * Fibbonachi: https://www.assemblyscript.org/introduction.html#from-a-webassembly-perspective 
     * How to Load: https://nodejs.org/en/learn/getting-started/nodejs-with-webassembly
     * AssemblyScript: https://www.assemblyscript.org/getting-started.html#setting-up-a-new-project
+12. Ex9: `child_process`
+    * https://nodejs.org/docs/latest/api/child_process.html
+    * Do gpg decrypt in nodeJS for api calls
     
 
 ## Training

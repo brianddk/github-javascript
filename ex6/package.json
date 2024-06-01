@@ -11,12 +11,12 @@
   "exports": "./hello.js",
   "comment-b": [
     "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
-    "test - import and export test ",
-    "eslint - run the lint static code analysis tool "
+    "  test - import and export test ",
+    "  lint - run the lint static code analysis tool "
   ],
   "scripts": {
     "test": "echo import 'Hello' > ex6.mjs && node ex6.mjs && del ex6.mjs",
-    "eslint": "npx eslint && echo Close enough (warnings don't count)! || echo Errors Found!!"
+    "lint": "npx eslint && echo Close enough (warnings don't count)! || echo Errors Found!!"
   },
   "keywords": [],
   "author": "brianddk at GitHub",

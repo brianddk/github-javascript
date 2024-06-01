@@ -18,13 +18,22 @@ This installs all the packages listed in `packages.json` including the developme
 
 Run prettier on the current source. If you find any files in need of modification, perform `npm run pretty:commit`.
 
-    npm run lent
+    npm run lint
 
 Run ESLint to check for logical or syntactic errors. You'll need to modify the files in error as ESLint does not offer to make the changes.
 
+    # Optional
+    npm asinit
+
+Will create an AssemblyScript project directory. Not needed for this small example, but useful for larger ones
+
+    npm asbuild
+
+Run Wasm compiler to convert `fib.ts` to `fib.wasm`
+
     npm test
 
-This will run `hello.js` as a module testing both `hello.js` and `package.json`.
+This will run `fib.js` as a module testing both `fib.js` and `package.json`.
 
 ## NPM scripts
 

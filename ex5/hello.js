@@ -1,6 +1,6 @@
 // Node v22 using MJS;  Added actual use of Octokit and debugger
 // node .\ex5\hello.js
-// node inspect .\ex3\hello.js  // goto "chrome://inspect" URL in a chrome browser
+// node inspect .\ex5\hello.js  // goto "chrome://inspect" URL in a chrome browser
 //                              // or type "cont" at debug prompt
 
 import { Octokit, App } from 'octokit';

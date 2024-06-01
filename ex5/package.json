@@ -1,6 +1,6 @@
 {
   "description": "Ex5. Webpack example",
-  "comment-3": [
+  "comment-a": [
     "Some of these fields like 'comment-x', and 'output' are extra and not ",
     "explicitly defined in the NPM package.json specification.  These ",
     "are used in other utilities that I choose to feed package.json as ",
@@ -16,28 +16,28 @@
   "exports": "./hello.js",
   "output": "./dist/main.js",
   "private": true,
-  "comment-17": [
+  "comment-b": [
     "The 'scripts` entry is used by 'npm run ...' or 'npm test ...' ",
-    "test - import and export test ",
-    "no-cors - an example of launching chrome without CORS security ",
-    "webpack - turns NodeJS into BrowserJS, see 'config' file named"
+    "  test - import and export test ",
+    "  browser - run in Chrome browser without CORS (security) ",
+    "  webpack - turns NodeJS into BrowserJS, see 'config' file named"
   ],
   "scripts": {
     "test": "echo import 'Hello' > ex5.mjs && node ex5.mjs && del ex5.mjs",
-    "no-cors": "start chrome.exe --disable-web-security",
+    "chrome": "start chrome.exe --disable-web-security \"%cd%\\dist\\index.html\"",
     "webpack": "npx webpack --config webpack.config.cjs"
   },
   "keywords": [],
   "author": "brianddk at GitHub",
   "license": "Apache-2.0",
-  "comment-33": [
+  "comment-c": [
     "'devDependencies' execute on 'npm install --include=dev ...'"
   ],
   "devDependencies": {
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },
-  "comment-40": [
+  "comment-d": [
     "'dependencies' execute on 'npm install ...'"
   ],
   "dependencies": {

@@ -5,8 +5,9 @@
 // npm run clean             // optional: remove files from previous runs
 // npm run sea-blob          // make the blob that will be injected
 // npm run cp-node           // copy the node binary (node.exe)
-// npm run axe-sig           // remove node.exe signature (req. signtool.exe)
+// npm run axe-sig           // remove node.exe signature
 // npm run sea-inject        // inject the blob into the exe
+// npm run build             // perform all the above steps in one go
 // npm test                  // run the standalone executable
 
 // Closure: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures

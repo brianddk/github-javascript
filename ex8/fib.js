@@ -1,3 +1,8 @@
+// Node v22 using MJS;  A Fibonacci implementation in WebAssembly
+// node .\ex8\fibs.js
+// node inspect .\ex8\fibs.js   // goto "chrome://inspect" URL in a chrome browser
+//                              // or type "cont" at debug prompt
+
 // Assume add.wasm file exists that contains a single function
 import fs from 'node:fs';
 
